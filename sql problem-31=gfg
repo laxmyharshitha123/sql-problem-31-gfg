@@ -1,0 +1,12 @@
+3. Identify the Most Frequently Sold Product from Sales table
+Query:
+
+SELECT product_id, COUNT(*) AS sales_count 
+FROM Sales 
+GROUP BY product_id 
+ORDER BY sales_count DESC 
+LIMIT 1;
+Output:
+
+product_id	sales_count
+101	1
